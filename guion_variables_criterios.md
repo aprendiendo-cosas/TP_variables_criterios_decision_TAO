@@ -50,9 +50,11 @@ En alguna ocasión hemos comentado que las variables (capas que representan la d
 
 Hay muchas formas de transformar una variable en criterio. Estas formas dependen de la función matemática utilizada. La siguiente figura resume el concepto y muestra algunos ejemplos de funciones de transformación.
 
+![transformacion](https://github.com/aprendiendo-cosas/TP_variables_criterios_decision_TAO/raw/main/imagenes/estandarizacion.jpg)
 
 
 
+En este curso usaremos solo funciones de transformación lineales. Son las más fáciles de implementar y se ajustan bien a lo que necesitamos. Para calcular los parámetros de las funciones de transformación usamos los puntos conocidos de la recta. Siempre sabremos que el valor más bajo de la variable tomará el valor más alto de aptitud o el más bajo (dependiendo de si la función es inversa o directa). Lo mismo ocurre con el valor más alto de la variable. Esto nos permite despejar fácilmente los parámetros de la ecuación de la recta. La imagen inferior muestra cómo proceder en ambos casos. 
 
 ## Creación de un mapa de aptitud desde el punto de vista de la erosión
 
