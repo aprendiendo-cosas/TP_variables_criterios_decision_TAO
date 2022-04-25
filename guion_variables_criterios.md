@@ -86,17 +86,17 @@ En este curso usaremos solo funciones de transformación lineales. Son las más 
 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
 
 
-## Creación de un mapa de aptitud desde el punto de vista de la distancia a la población de invasora más cercana
+## Creación de un mapa de aptitud desde el punto de vista de la distancia a la población de invasora más cercana (INCOMPLETO)
 
-+ Fuente de información: [Mapa de distribución de los páramos](https://github.com/aprendiendo-cosas/TP_variables_criterios_decision_TAO/raw/main/geoinfo/COL_paramos.zip). 
-+ Estructura de datos:
-  + Fichero de formas poligonal con multitud de campos. 
-  + El campo *Shape_area* muestra el área (en metros cuadrados) de cada polígono.
-+ Mapa de presencias de la especie: Usamos como ejemplo la especie *Ulex europaeus*. Aquí se pueden descargar todos los registros existentes en GBIF.
++ Fuente de información: 
+  + [Mapa de distribución de los páramos](https://github.com/aprendiendo-cosas/TP_variables_criterios_decision_TAO/raw/main/geoinfo/col_paramos.tif) en formato raster. Cada píxel ocupador por páramos tiene valor 1. El resto tienen valor 0.
+  + [Mapa de presencias de la especie](https://github.com/aprendiendo-cosas/TP_variables_criterios_decision_TAO/raw/main/geoinfo/0219160-210914110416597.zip): Usamos como ejemplo la especie *Ulex europaeus*. Los datos proceden de la información de presencias de GBIF.
 + Construcción del criterio: A valores más altos de superficie, menor idoneidad desde el punto de vista de la vulnerabilidad. Es, por tanto una relación lineal e inversa.
 
 
 + Flujo de trabajo:  [Aquí](https://github.com/aprendiendo-cosas/TP_variables_criterios_decision_TAO/raw/main/workflows/erosion.drawio.zip) se puede descargar el esquema mostrado a continuación.
+
+
 
 
 
