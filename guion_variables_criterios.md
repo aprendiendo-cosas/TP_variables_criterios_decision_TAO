@@ -56,6 +56,10 @@ Hay muchas formas de transformar una variable en criterio. Estas formas dependen
 
 En este curso usaremos solo funciones de transformación lineales. Son las más fáciles de implementar y se ajustan bien a lo que necesitamos. Para calcular los parámetros de las funciones de transformación usamos los puntos conocidos de la recta. Siempre sabremos que el valor más bajo de la variable tomará el valor más alto de aptitud o el más bajo (dependiendo de si la función es inversa o directa). Lo mismo ocurre con el valor más alto de la variable. Esto nos permite despejar fácilmente los parámetros de la ecuación de la recta. La imagen inferior muestra cómo proceder en ambos casos. 
 
+![lineal](https://github.com/aprendiendo-cosas/TP_variables_criterios_decision_TAO/raw/main/imagenes/lineal.png)
+
+
+
 ## Creación de un mapa de aptitud desde el punto de vista de la erosión
 
 + Fuente de información: [Mapa de erosión de Colombia](https://github.com/aprendiendo-cosas/TP_variables_criterios_decision_TAO/raw/main/geoinfo/P_erosion_2010_2011.zip). 2010-2011. IGAC Instituto Geográfico.
@@ -63,8 +67,24 @@ En este curso usaremos solo funciones de transformación lineales. Son las más 
   + Fichero de formas poligonal.
   + El campo *Clase* muestra el tipo de erosión presente.
   + El campo *Grado* indica la intensidad de la erosión mediante un texto.
-  + El campo *RULEID* muestra la intensidad de manera cuantitativa. Valores más bajos indican mayor intersidad. 
-+ Flujo de trabajo:  
+  + El campo *RULEID* muestra la intensidad de manera cuantitativa:
+    + 1: Erosión muy severa
+    + 2: Erosión severa.
+    + 3: Erosión moderada.
+    + 4: Erosión ligera.
+    + 5: Sin evidencias de erosión.
+    + 6: Sin suelo con afloramiento rocoso.
+    + 7: Cuerpos de agua.
+    + 8: Zonas urbanas.
++ Construcción del criterio: A valores más bajos de la variable (*RULEID*) más aptitud. Por tanto es una función de transformación lineal e inversa. Aunque como la leyenda de la capa original está "invertida" (los valores más altos indican menos erosión), vamos a calcularla expresamente:
+
+
+
+
+
+
+
++ Flujo de trabajo:  Aquí se puede descargar el esquema mostrado a continuación.
 
 
 
