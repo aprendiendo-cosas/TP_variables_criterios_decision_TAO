@@ -1,4 +1,4 @@
-# Construcción de un modelo conceptual para responder a la pregunta planteada
+# Creación de variables y de criterios sobre el problema decisional planteado
 
 
 > + **_Curso_**: DECISION - Uso de información sintética como apoyo a la toma de decisiones. Proyecto TAO (Tropical Andes Observatory)
