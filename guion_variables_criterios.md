@@ -33,12 +33,47 @@ Vamos a crear un proyecto de QGIS vacío para ir procesando en él la informaci�
 
 1. Creamos un proyecto y lo guardamos en una carpeta que no esté en el escritorio. En el nombre no poneos ni espacios ni tildes. Ej. paramo_colombia.qgz
 2. Ahora vamos a desplegar una fotografía aérea de la zona de estudio. Para eso nos conectamos a un servicio WMS. Una opción fácil es instalar un complemento (plugin) llamado *QuickMapServices*. Este complemento permite añadir ortoimágenes de Google, Bing y otros. Una vez instalado, vamos al menú web de QGIS y seleccionamos "Bing Satellite" como imagen de fondo.
-3. Cargaremos en primer lugar un shapefile que muestra la distribución de los páramos de Colombia. Será nuestra zona de estudio. Descarga este archivo en la carpeta de trabajo. 
+3. Cargaremos en primer lugar un shapefile que muestra la distribución de los páramos de Colombia. Será nuestra zona de estudio. Descarga [este](https://github.com/aprendiendo-cosas/TP_variables_criterios_decision_TAO/raw/main/geoinfo/COL_paramos.zip) archivo (COL_paramos.zip) en la carpeta de trabajo. Descomprime el archivo y carga el fichero de formas al proyecto anterior.
+4. También cargaremos [esta](https://github.com/aprendiendo-cosas/TP_variables_criterios_decision_TAO/raw/main/geoinfo/col_paramos.tif) versión rasterizada de la capa anterior. Nos servirá como referencia para que todas las demás que generemos tengan su misma resolución (500m), número de filas y de columnas. Descarga el archivo anterior y guárdalo en la carpeta de trabajo. Luego cárgalo al proyecto de QGIS que tengas abierto. 
+
+Otras consideraciones generales:
+
++ Trabajaremos siempre con el sistema de referencias EPSG 3116.
++ Nuestro análisis se realizará en formato raster y la resolución de cada capa será de 500 m.
++ Todas las capas obtenidas deberán de tener la misma extensión. 
+
+
+
+## Aspectos teóricos de la estandarización de criterios
+
+En alguna ocasión hemos comentado que las variables (capas que representan la distribución espacial de un factor importante) han de ser transformadas en criterios decisionales (capas que muestran la distribución de la idoneidad desde el punto de vista de nuestro problema). Así, por ejemplo, un mapa de distancias a carreteras puede convertirse en varios criterios en función de la decisión que debamos adoptar. Si el problema decisional implica que a más distancia de cada punto a una carretera, peor, tendremos una capa de criterio diferente a que si consideramos lo contrario. El proceso por el cual se transforman las variables en criterios se denomina estandarización. Y además implica que la leyenda de las capas se normaliza a valores de 0 a 1 o de 0 a 255. 
+
+Hay muchas formas de transformar una variable en criterio. Estas formas dependen de la función matemática utilizada. La siguiente figura resume el concepto y muestra algunos ejemplos de funciones de transformación.
+
+
+
+
 
 ## Creación de un mapa de aptitud desde el punto de vista de la erosión
 
-+ Fuente de información:
-+ Flujo de trabajo:  diagrama
++ Fuente de información: [Mapa de erosión de Colombia](https://github.com/aprendiendo-cosas/TP_variables_criterios_decision_TAO/raw/main/geoinfo/P_erosion_2010_2011.zip). 2010-2011. IGAC Instituto Geográfico.
++ Estructura de datos:
+  + Fichero de formas poligonal.
+  + El campo *Clase* muestra el tipo de erosión presente.
+  + El campo *Grado* indica la intensidad de la erosión mediante un texto.
+  + El campo *RULEID* muestra la intensidad de manera cuantitativa. Valores más bajos indican mayor intersidad. 
++ Flujo de trabajo:  
+
+
+
+
+
+
+
+
+
+
+
 + Paso a paso:
   + ddd
   + ddd
